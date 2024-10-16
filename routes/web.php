@@ -30,6 +30,7 @@ Route::get('/user/profile', function () {
 })->name('user.profile');
 
 
+
 //Route Param
 Route::get('/user/{name}', function ($name) {
     return 'User '.$name;
@@ -80,3 +81,4 @@ Route::prefix('food')->group(function(){
         return 'Job details are following';
     })->name('description');
 });
+require __DIR__.'/feed/web.php';
